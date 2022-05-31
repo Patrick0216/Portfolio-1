@@ -3,7 +3,6 @@
     --Gcolor2: darkgrey;
     --Gcolor3: crimson;
     --Tcolor1: white;
-    --Tcolor2: white;
 }
 
 header {
@@ -12,12 +11,12 @@ header {
     justify-content: space-between;
     background-color: var(--Gcolor1);
     width: auto;
-    height: 100px;
+  
 }
 
 .header-nav {
     margin-right: 5%;
-    background-color: var(--Gcolor3);
+   
 }
 
 .header-nav a {
@@ -28,7 +27,7 @@ header {
 h1 {
     padding: 22px;
     font-size: 28px;
-    text-transform: bold;
+    
     background-color: var(--Gcolor3);
     color: var(--Gcolor1);
     
@@ -37,28 +36,28 @@ h1 {
 span{
     padding: 22px;
     font-size: 28px;
-    text-transform: bold;
+    
     background-color: var(--Gcolor3);
     color: var(--Tcolor1);
 }
+
 .header-nav ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 2px 6px;
-    background-color: var(--Gcolor3);
+  
+    
     
 }
 
 .header-nav ul li a {
-    color: black;
-    font-size: 22px;
+    color: var(--Tcolor1);
+    
+    justify-items: right;
     text-decoration: none;
 }
 
 .header-nav ul li a:hover {
-    color: black;
-    font-size: 22px;
-    text-decoration: underline black 6px;
+    text-decoration: underline var(--Tcolor1) 6px;
 }
 
 .container {
@@ -130,70 +129,85 @@ h2 {
     margin-left: 20%;
     margin-top: 45px;
     width: 75%;
-    height: 600px;
+    height: 500px;
     background-color: var(--Gcolor1);
     border: 8px solid var(--Gcolor3);
     opacity: 80%;
 }
+
 .placeholder:hover {
     opacity: 100%;
 }
 
 .placeholder p {
     display: inline-flex;
-    margin-top: 450px;
+    margin-top: 30%;
     padding: 30px;
     background-color: var(--Gcolor3);
     font-size: 34px;
     text-decoration: underline black 6px;
 }
 
-.grid-section {
+.top-shelf {
     display: flex;
     flex-wrap: wrap;
+    height: 200px;
     margin-top: 45px;
+    margin-bottom: 45px;
     margin-left: 20%;
+    margin-right: 4%;
+    width: 76%;
+    row-gap: 20px;
+    column-gap: 20px;
 }
 
+.bottom-shelf {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 20%;
+    margin-right: 4%;
+    width: 76%;
+    row-gap: 20px;
+    column-gap: 20px;
+}
 
 .current-projects {
-    margin-bottom: 45px;
-    margin-right: 45px;
-    width: 700px;
-    height: 200px;
+    flex-grow: 1;
+    flex-basis: 21%;
     background-color: var(--Gcolor1);
     border: 8px solid var(--Gcolor3);
     opacity: 80%;
+    display: flex;
 }
 
 .past-projects {
-    margin-bottom: 45px;
-    margin-right: 45px;
-    width: 700px;
-    height: 200px;
+    flex-grow: 1;
+    flex-basis: 21%;
     background-color: var(--Gcolor1);
     border: 8px solid var(--Gcolor3);
     opacity: 80%;
+    display: flex;
 }
 
 .future-projects {
-    margin-bottom: 45px;
-    margin-right: 45px;
-    width: 700px;;
-    height: 200px;
+    flex-grow: 1;
+    flex-basis: 21%;
     background-color: var(--Gcolor1);
     border: 8px solid var(--Gcolor3);
     opacity: 80%;
+    display: flex;
 }
 
 .early-work {
-    margin-bottom: 45px;
-    margin-right: 45px;
-    width: 700px;
-    height: 200px;
+    flex-grow: 1;
+    flex-basis: 21%;
     background-color: var(--Gcolor1);
     border: 8px solid var(--Gcolor3);
     opacity: 80%;
+    display: flex;
 }
 
 .current-projects p {
@@ -272,7 +286,6 @@ footer {
 h6 {
     padding: 22px;
     font-size: 28px;
-    text-transform: bold;
     background-color: var(--Gcolor3);
     color: var(--Gcolor1);
     
